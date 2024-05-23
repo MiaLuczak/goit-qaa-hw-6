@@ -15,7 +15,6 @@ const maciej = {
 };
 
 // Testing showName() object method
-
 maciej.showName();
 
 
@@ -29,7 +28,11 @@ const bookshelf = {
 
     addAuthor(authorName) {
         this.authors.push(authorName);
-        return this.authors
     }
 };
 
+// Testing bookshelf object methods
+console.log(bookshelf.getAuthors());
+bookshelf.addAuthor('John Ronald Reuel Tolkien');
+bookshelf.addAuthor('Andrzej Sapkowski');
+console.log(bookshelf.getAuthors());
