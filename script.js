@@ -5,7 +5,7 @@
 
 
 // Creating object Maciej
-const Maciej = {
+const maciej = {
     username: 'Maciej',
 
     // Creating showName() object method
@@ -16,4 +16,4 @@ const Maciej = {
 
 // Testing showName() object method
 
-Maciej.showName();
+maciej.showName();
