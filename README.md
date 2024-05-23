@@ -1,10 +1,10 @@
-# Zrozumienie konecepcji
+# Zrozumienie konecepcji działania 
 
-## Definicja słowa kluczowego `this` 
+### Definicja słowa kluczowego `this` 
 
 - Słówko kluczowe `this`  w JS umożliwia odwołanie się do kontekstu w miejscu jego zadeklarowania (Przykłady):
   
-    - Metody obiektowe:
+    - **Metody obiektowe**:
 
         ```
         const user = {
@@ -28,15 +28,32 @@
         user.showUserAddress();
         ```
 
-        Pozwala 'pokazać' JavaScript'owi, gdzie dokładnie ma szukać informacji. Zamiast przeszukiwać cały kod, za pomocą `this` powołujemy się na konkretne miejsce w kodzie (ten obiekt)
+        Pozwala 'pokazać' JavaScript'owi, gdzie dokładnie ma szukać informacji. Zamiast przeszukiwać cały kod: </br>
+        najpierw odnaleźć obiekt, potem właściwość do której się odwołujemy, </br>
+        za pomocą `this` powołujemy się już na konkretne miejsce w kodzie (ten obiekt) co przekłada się na lepszą optymalizację.
 
         Pozwala również odwoływać się do właściwości nie podając jej nazwy: </br>
-    Zamiast `user.name` </br>
-    morzemy użyć `this.name`
+        Zamiast `user.name` </br>
+        morzemy użyć `this.name`
 
-    - Klasy obiektów:
+    </br>
 
-        s
+    - **Klasy**
+
+        ```
+            class User {
+                constructor({ name, email }) {
+                this.name = name,
+                this.email = email
+                }
+            }
+        ```
+
+        Podczas tworzenia klasy obiektów, słówko kluczowe `this` odwołuje się do tworzonego obiektu, </br>
+        bez wykorzystania tego słówka JS próbuje odwołać się do wartości, która w tym przypadku nie jest nigdzie zadeklarowana, co wygeneruje błąd.
+    
+
+        
 
 
          
