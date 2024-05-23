@@ -17,3 +17,19 @@ const maciej = {
 // Testing showName() object method
 
 maciej.showName();
+
+
+// 'Rozszerzony przykład'
+const bookshelf = {
+    authors: ['Bourgeois Paulette', 'Milne Alan Alexander', 'Joanne K. Rowling'],
+
+    getAuthors() {
+        return this.authors;
+    },
+
+    addAuthor(authorName) {
+        this.authors.push(authorName);
+        return this.authors
+    }
+};
+
